@@ -14,11 +14,22 @@ float average(int array_size, float *numbers)
     }
     return sum/array_size;
 }
-
+float max_number(int array_size, float *numbers)
+{
+    float highest=*numbers;
+    numbers++;
+    for(int i =1; i<array_size; i++)
+    {
+        if(*numbers>highest){highest=*numbers;}
+        numbers++;
+    }
+    return highest;
+}
 int main()
 {
     float *arr;
     arr=new float[5];
-    cout <<"Average: "<<average(5,arr);
+    cout <<"Average: "<<average(5,arr)<<endl;
+    cout <<"The biggest number is: "<<max_number(5,arr);
     return 0;
 }
