@@ -1,0 +1,1 @@
+Program takes 5 numbers from user. After that it counts an average, finds the biggest number and finds the closest number to the average.
